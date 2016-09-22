@@ -1,0 +1,7 @@
+{
+  "name": "frank-kiely",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt-contrib-connect": "^1.0.2"
+  }
+}
