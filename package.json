@@ -2,6 +2,8 @@
   "name": "frank-kiely",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt-contrib-connect": "^1.0.2"
+    "grunt": "~0.4.5",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-ejs-static": "^0.4.3"
   }
 }
