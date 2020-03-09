@@ -1,0 +1,43 @@
+<ul class="gallery-list bxslider_off hidden">
+<% for(var slug in public.pictures.prints._data){ %>
+    <li>
+        <a href="/pictures/prints/<%= slug %>">
+            <img src="pictures/prints/images/<%= public.pictures.prints._data[slug].image %>_t.gif" alt="">
+            <p><%= public.pictures.prints._data[slug].title %></p>
+        </a>
+    </li>
+<% }; %>
+</ul>
+
+<ul class="bxslider1 slider-main">
+<% for(var slug in public.pictures.prints._data){ %>
+    <li>
+        <div class="slide">
+            <div class="image">
+                <img src="pictures/prints/images/<%= public.pictures.prints._data[slug].image %>.jpg" alt="">
+            </div>
+            <div class="details">
+                <h2><%= public.pictures.prints._data[slug].title %></h2>
+                <p>
+                    <%= public.pictures.prints._data[slug].year %><br>
+                    <%= public.pictures.prints._data[slug].details %><br>
+                    <%= public.pictures.prints._data[slug].size %>
+                </p>
+            </div>
+        </div>
+    </li>
+<% }; %>
+</ul>
+
+<div id="bx-pager" class="bxslider2 slider-thumb">
+<% var i = 0 %>
+<% for(var slug in public.pictures.prints._data){ %>
+    <li>
+
+        <a href="" data-slide-index="<%= i %>">
+            <img src="pictures/prints/images/<%= public.pictures.prints._data[slug].image %>_t.gif" alt="">
+        </a>
+        <% i = i+1 %>
+    </li>
+<% }; %>
+</div>

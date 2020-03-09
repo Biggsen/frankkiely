@@ -1,0 +1,21 @@
+{
+    "index": {
+        "home": true
+    },
+    "prints": {
+        "prints": true,
+        "gallery": true,
+        "title": "Prints"
+    },
+    "paintings": {
+        "paintings": true,
+        "gallery": true,
+        "title": "Paintings"
+    },
+    "news": {
+        "news": true
+    },
+    "contact": {
+        "contact": true
+    }
+}

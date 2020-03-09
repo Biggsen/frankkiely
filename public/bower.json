@@ -1,0 +1,21 @@
+{
+  "name": "frankkiely",
+  "version": "0.0.0",
+  "authors": [
+    "Biggs Thorarensen <biggs@devillion.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "girder": "~1.0.4"
+  },
+  "devDependencies": {
+    "bxslider-4": "fafnur-bxslider#~4.2.5"
+  }
+}

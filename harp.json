@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "title": "Frank Kiely",
+    "name"  : "Frank Kiely",
+    "uri": "http://example.com",
+    "home": false,
+    "about": false,
+    "gallery": false,
+    "prints": false,
+    "paintings": false,
+    "contact": false
+  }
+}

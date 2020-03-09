@@ -1,0 +1,50 @@
+.bx-wrapper {
+	box-shadow: none;
+}
+
+.slider-main {
+}
+
+.slide {
+	width: 100%;
+}
+
+.details {
+	float: right;
+	width: 35%;
+	@include mq(down,690px) {
+		width: auto;
+		float: none;
+	}
+	@include mq(down,500px) {
+		margin: 0;
+	}
+	h2 {
+		@include mq(down,850px) {
+			font-size: 20px;
+		}
+		@include mq(down,400px) {
+			font-size: 18px;
+		}
+	}
+	p {
+		@include mq(down,400px) {
+			font-size: 15px;
+		}
+	}
+}
+
+.image {
+	float: right;
+	width: 60%;
+	padding-right: 5%;
+	@include mq(down,690px) {
+		width: auto;
+		float: none;
+		padding-right: 0;
+	}
+	@include mq(down,500px) {
+		margin: 0;
+	}
+
+}

@@ -1,0 +1,19 @@
+<nav>
+    <h1 class="logo"><a href="/">Frank Kiely</a></h1>
+    <ul class="menu">
+        <li><a href="/prints" class="<% if(locals.gallery) { %>active<% }; %>">Gallery</a>
+            <% if(locals.gallery) { %>
+            <ul class="submenu">
+                <li><a href="/prints" class="<% if(locals.prints) { %>active<% }; %>">Prints</a></li>
+                <li><a href="/paintings" class="<% if(locals.paintings) { %>active<% }; %>">Paintings</a></li>
+            </ul>
+            <% }; %>
+        </li>
+        <li><a href="/news" class="<% if(locals.news) { %>active<% }; %>">News</a></li>
+        <!-- <li><a href="#">News</a></li> -->
+        <!-- <li><a href="#">Press</a></li> -->
+        <!-- <li><a href="#">Shop</a></li> -->
+        <li><a href="/contact" class="<% if(locals.contact) { %>active<% }; %>">Contact</a></li>
+        <!-- <li><a href="#">Links</a></li> -->
+    </ul>
+</nav>

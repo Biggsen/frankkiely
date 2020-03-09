@@ -1,0 +1,88 @@
+/*------------------------------------*\
+    $MENU
+\*------------------------------------*/
+
+nav {
+	position: relative;
+}
+
+.menu {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 35px 0 50px;
+	list-style: none;
+	text-align: right;
+
+	@include mq(down,690px) {
+		padding-top: 70px;
+		text-align: left;
+	}
+	@include mq(down,440px) {
+		padding-top: 50px;
+	}
+
+	> li {
+		display: inline;
+		position: relative;
+
+		&:first-child {
+			a {
+				padding-left: 0;
+			}
+		}
+
+		&:last-child {
+			a {
+				padding-right: 0;
+			}
+		}
+	}
+
+	a {
+		font-family: Raleway;
+		text-transform: uppercase;
+		padding: 0 20px;
+		font-weight: 300;
+		font-size: 26px;
+		text-decoration: none;
+		color: #aaa;
+
+		@include mq(down,440px) {
+			padding: 0 10px;
+			font-size: 20px;
+		}
+
+		&:hover {
+			color: #000;
+		}
+
+		&.active {
+			color: #000;
+		}
+	}
+}
+
+.submenu {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+
+	li {
+		display: block;
+	}
+
+	a {
+		font-family: Raleway;
+		text-transform: uppercase;
+		padding-left: 20px;
+		font-size: 20px;
+
+		@include mq(down,440px) {
+			font-size: 18px;
+		}
+	}
+}

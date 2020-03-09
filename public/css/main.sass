@@ -1,0 +1,48 @@
+@import "modules/vars"
+@import "modules/helper"
+@import "modules/type"
+@import "modules/menu"
+@import "modules/sliders"
+@import "partials/normalize"
+@import "girder/scss/_girder"
+
+.within
+    width: 100%
+    max-width: 1000px
+    margin: 0 auto
+
+.width-half
+    +unit(half)
+
+.width-golden-small
+    +unit(golden-small)
+
+.width-golden-large
+    +unit(golden-large)
+
+body
+    @include mq(down,1020px)
+    padding: 0 12px
+
+main
+    clear: left
+    margin-bottom: 100px
+
+article
+    max-width: 700px
+
+img
+    max-width: 100%
+
+footer
+    margin-bottom: 50px
+    text-align: center
+
+.social-icons
+    padding-left: 0
+    li
+        display: inline-block
+        list-style: none
+        a
+            width: 40px
+            display: block
